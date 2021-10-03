@@ -31,6 +31,14 @@ def stick(x, y, n, s, angle): ## (1st cord, 2nd cord, num_elip, angle)
     for k in range(0, n ):
         ell(x[0] + (y[0] - x[0]) * (0.5 * abs((b - 1)) / 2 + k / n / 2), x[1] + (y[1] - x[1]) * (0.5 * abs((b - 1)) / 2 + k / n / 2), s, angle)
         
+pygame.draw.rect(screen, (0, 100, 0), (200, 315, 15, 70))
+pygame.draw.rect(screen, (0, 100, 0), (200, 225, 15, 80))
+pygame.draw.polygon(screen, (0, 100, 0), [(210, 215), (200, 210), (205, 160), (215, 165)])
+pygame.draw.polygon(screen, (0, 100, 0), [(215, 155), (210, 152), (217, 80), (222, 83)])
+stick([135, 200], [195, 230], 3, 1, -30)
+stick([320, 100], [220, 180], 5, 1, 30)
+stick([135, 100], [195, 150], 5, 1, -30)
+stick([270, 200], [220, 230], 3, 1, 30)
         
 pygame.draw.rect(screen, (0, 100, 0), (400, 315, 15, 90))
 pygame.draw.rect(screen, (0, 100, 0), (400, 225, 15, 80))
@@ -49,6 +57,15 @@ stick([455, 150], [595, 230], 3, 1.5, -30)
 stick([780, 50], [620, 160], 5, 1.5, 30)
 stick([435, 30], [595, 110], 5, 1.5, -30)
 stick([770, 150], [640, 210], 3, 1.5, 30)
+
+pygame.draw.rect(screen, (0, 100, 0), (800, 315, 15, 90))
+pygame.draw.rect(screen, (0, 100, 0), (800, 225, 15, 80))
+pygame.draw.polygon(screen, (0, 100, 0), [(810, 215), (800, 210), (805, 160), (815, 165)])
+pygame.draw.polygon(screen, (0, 100, 0), [(815, 155), (810, 152), (817, 80), (822, 83)])
+stick([735, 200], [795, 230], 3, 1, -30)
+stick([920, 100], [820, 180], 5, 1, 30)
+stick([735, 100], [795, 150], 5, 1, -30)
+stick([870, 200], [820, 230], 3, 1, 30)
 
 pygame.draw.ellipse(screen, (255, 255, 255), (650, 250, 250, 170))
 pygame.draw.ellipse(screen, (0, 0, 0), (840, 330, 50, 120))
@@ -70,6 +87,27 @@ pygame.draw.ellipse(screen, (0, 0, 0), (750, 230, 40, 70))
 pygame.draw.ellipse(screen, (0, 0, 0), (650, 365, 40, 25))
 pygame.draw.circle(screen, (0, 0, 0), (660, 330), 20)
 pygame.draw.circle(screen, (0, 0, 0), (710, 330), 20)
+
+
+
+####
+
+pygame.draw.ellipse(screen, (255, 255, 255), (510, 400, 100, 70))
+pygame.draw.ellipse(screen, (0, 0, 0), (590, 430, 20, 50))
+pygame.draw.circle(screen, (0, 0, 0), (595, 475), 10)
+
+pygame.draw.polygon(screen, (0, 0, 0), [(560, 410),(560, 480), (540, 490), (530, 470)])
+pygame.draw.circle(screen, (0, 0, 0), (545, 475), 15)
+
+pygame.draw.ellipse(screen, (0, 0, 0), (500, 420, 25, 70))
+
+pygame.draw.ellipse(screen, (255, 255, 255), (485, 390, 70, 70))
+
+pygame.draw.polygon(screen, (0, 0, 0), [(510, 405), (485, 415), (490, 400), (500, 390)])
+pygame.draw.ellipse(screen, (0, 0, 0), (540, 400, 15, 30))
+pygame.draw.ellipse(screen, (0, 0, 0), (500, 450, 20, 10))
+pygame.draw.circle(screen, (0, 0, 0), (500, 440), 10)
+pygame.draw.circle(screen, (0, 0, 0), (520, 440), 10)
 
 pygame.display.update()
 clock = pygame.time.Clock()
