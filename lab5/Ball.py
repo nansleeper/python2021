@@ -48,10 +48,12 @@ def schet(x, y):
             pygame.draw.rect(screen, (255, 0, 0), (x + 10, y - 70, 20, 10))
 
 def timebar():
+
     '''
     (function) timebar: 
     Function draws timebar.
     '''
+    
     pygame.draw.rect(screen, (0, 255, 0), (440, 30, 320 * (globaltime / finishtime), 40))
 
 class Ball:
@@ -135,9 +137,9 @@ class Ball:
     def miss(self, coord):
 
         '''
-        (function) collups: (coord)
+        (function)  miss: (coord)
         coord: click coordinates
-        Function destroy balls with self time > live time.
+        Function calculates miss clicks.
         '''
 
         global score, miss_num
