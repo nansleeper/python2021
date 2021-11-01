@@ -180,15 +180,19 @@ finished0 = False
 schet(580, 235)
 pygame.draw.rect(screen, (255, 255, 255), (420, 20, 360, 60), width = 0)
 
+flag = False
+
 while not finished:
     clock.tick(FPS)
     for event in pygame.event.get():
         schet(580, 235)
         if event.type == pygame.QUIT:
             finished = True
+            flag = True
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
                 finished = True
+                flag = True
         if event.type == pygame.MOUSEBUTTONDOWN:
             if event.button == 1:
                 for k in pool1:
@@ -225,7 +229,10 @@ while not finished:
 
 pygame.draw.rect(screen, (0, 0, 0), (0, 0, 800, 400))
 pygame.display.update()
-result = finishtime - globaltime
+if flag == False:
+    result = finishtime - globaltime
+else:
+    result = 'Заранее окончил игру'
 print(result)
 
 
