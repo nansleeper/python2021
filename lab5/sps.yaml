@@ -2,3 +2,6 @@ result:
 - null
 - name: nn
   points: 200
+- name: ll
+  points: "\u0417\u0430\u0440\u0430\u043D\u0435\u0435 \u043E\u043A\u043E\u043D\u0447\
+    \u0438\u043B \u0438\u0433\u0440\u0443"
